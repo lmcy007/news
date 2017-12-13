@@ -9,6 +9,7 @@
           <p class="name">{{a.name}}</p>
           <p class="slogan">{{a.slogan}}</p>
         </div>
+
         <span class="focus" v-if='a.status' @click='a.status = !a.status'>关注</span>
         <span class="focus focused" @click='a.status = !a.status' v-else>已关注</span>
       </div>
@@ -20,9 +21,11 @@
           <div class="intro">
             <p class="name">{{o.name}}</p>
             <p class="slogan">{{o.slogan}}</p>
+
           </div>
         </div>
         <div>
+          <img src="../assets/author/author.jpg" height="80" width="80">
           <span class="focus" v-if='o.status' @click='o.status = !o.status' >关注</span>
           <span class="focus focused" @click='o.status = !o.status' v-else>已关注</span>
         </div>

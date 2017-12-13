@@ -12,16 +12,16 @@
           <a class="join" href="javascript: void(0)">进入专题></a>
         </div>
       </div>
-      <div class="prev">
-        <div v-for='p in points' class="list">
-          <div class="mask">
-            <span class="times">{{p.times}}</span>
-            <h2>{{p.title}}</h2>
-             <p>{{p.msg}}</p>
-             <a class="join" href="javascript: void(0)"> > </a>
-          </div>
+    <div class="prev">
+      <div v-for='p in points' class="list">
+        <div class="mask">
+          <span class="times">{{p.times}}</span>
+          <h2>{{p.title}}</h2>
+          <p>{{p.msg}}</p>
+          <a class="join" href="javascript: void(0)"> > </a>
         </div>
       </div>
+    </div>
   </section>
 </template>
 

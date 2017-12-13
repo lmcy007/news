@@ -4,6 +4,9 @@
     <div class="nav" v-for='m in menus'>
       <router-link :to='setPaht(m.path)'><span>{{m.text}}</span></router-link>
     </div>
+    <!--<div class="aside">
+      <div v-for='i in 3' class="line"></div>
+    </div>-->
   </section>
 </template>
 
@@ -22,6 +25,15 @@ export default {
       }, {
         text: '作者',
         path: '/author'
+      }, {
+        text: '视频',
+        path: '/shipin'
+      }, {
+        text: '军事',
+        path: '/junshi'
+      }, {
+        text: '科技',
+        path: '/keji'
       }]
     }
   },
@@ -35,12 +47,13 @@ export default {
 
 <style lang="stylus">
 .nav{
-  width: 100%;
-  height: 50px;
+  width:33rem;
+  height: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: #fff;
+
   .nav{
     width: 33%;
     height: 100%;
@@ -52,7 +65,7 @@ export default {
       align-items: center;
       text-decoration: none;
       color: #666;
-      font-size: 18px;
+      font-size: 15px;
       text-align: center;
       span:first-child{
         height: 30px;
@@ -61,10 +74,41 @@ export default {
       }
     }
   }
-  div:nth-child(2) > a > span{
-    border-left: 1px solid #eee;
+  .aside{
+    border solid;
+    width:3rem;
+    height: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .line{
+      height: 1px;
+      width: 25px;
+      background:#f00000;
+      transition: all 0.5s;
+    }
+    .line:nth-of-type(2){
+      margin: 6px 0;
+    }
+  }
+  .line:nth-of-type(2){
+    margin: 6px 0;
+  }
+  /*div:nth-child(2) > a > span{
+    border-left: 1px solid #f00;
     border-right: 1px solid #eee;
   }
+  div:nth-child(3) > a > span{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #f00;
+  }*/
   .active{
     border-bottom: 1px solid red;
     box-sizing: border-box;

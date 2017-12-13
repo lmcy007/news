@@ -1,37 +1,10 @@
 <template>
-  <header class="head">
-    <a href="javascript: void(0)"><img class="baijia" src="../../assets/head/logo.png"/></a>
-    <svg class="icon searchBtn" @click='openSearch' aria-hidden="true">
-      <use xlink:href="#icon-sousuo"></use>
-    </svg>
-    <div class="searchPage">
-      <div class="header">
-        <div class="search">
-          <input v-model='searchContent' type="text" />
-          <svg class="icon" @click='searchNewsBtn' aria-hidden="true">
-            <use xlink:href="#icon-sousuo"></use>
-          </svg>
-        </div>
-        <svg class="icon close" @click='closeSearch' aria-hidden="true">
-          <use xlink:href="#icon-hao"></use>
-        </svg>
-      </div>
-      <div class="content">
-        <p class="today">今天</p>
-        <ul class="news">
-          <li ref='newsItem' v-for='(news, index) in searchNews'>
-            <a :href="'#' + news.id" @click='goNews'>
-              <p v-if='+index < 3'><i class="isTop3"> {{index + 1}} </i><span ref='title' class="title"> {{news.title}}</span></p>
-              <p v-else><i> {{index + 1}} </i><span ref='title' class="title"> {{news.title}}</span></p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="aside" @click='toggleMenu'>
-      <div v-for='i in 3' class="line"></div>
-    </div>
-  </header>
+  <div>
+  <div class="head">
+      新闻网
+  </div>
+    <div></div>
+  </div>
 </template>
 
 <script>
@@ -94,9 +67,20 @@ export default {
 
 <style lang="stylus">
 .head{
-  height: 60px;
-  background: #262627;
-  position: relative;
+  text-align:center;
+  width:33rem;
+  height: 2.5rem;
+  line-height:2.5rem;
+  background #2894FF;
+  text-align:center;
+  color white;
+  font-family: "宋体";
+  font-style: italic;
+  font-size:20px;
+  margin:0 auto;
+
+
+  //position: relative;
   img{
     height: 50px;
     position: absolute;
@@ -135,7 +119,7 @@ export default {
     .line{
       height: 1px;
       width: 25px;
-      background: #fff;
+      background:#ffffff;
       transition: all 0.5s;
     }
     .line:nth-of-type(2){

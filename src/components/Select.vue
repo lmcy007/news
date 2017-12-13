@@ -1,9 +1,10 @@
 <template>
   <div class="select">
     <div class="banner">
+    测试测试测试测试
       <swiper :options="swiperOption"  ref="mySwiper">
         <!-- 这部分放你要渲染的那些内容 -->
-        <swiper-slide v-for='img in banners' :key="img.channelId">
+        <!--<swiper-slide v-for='img in banners' :key="img.channelId">
           <img :src="setBannerSrc(img)"/>
         </swiper-slide>
         <!-- 这是轮播的小圆点 -->
@@ -11,27 +12,16 @@
       </swiper>
     </div>
     <!--加载动画-->
-    <div class="spinner" v-show='loadAnimation'></div>
-    <transition name='fade' mode='out-in'>
+    <!--<div class="spinner" v-show='loadAnimation'></div>-->
+    <!--<transition name='fade' mode='out-in'>
       <svg v-show='rocket' class="icon goTop" @click='goPageTop' aria-hidden="true">
         <use xlink:href="#icon-0028"></use>
       </svg>
-    </transition>
-    <section class="news">
-      <div v-if='requestStatus'>
-        <div v-for='news in newsDate' :id="news.id">
-          <a href="javascript: void(0)" class="new" :key='news.channelId'>
-            <img v-lazy='news.imageurls[0].url' :src="setNewSrc(news.imageurls[0].url)"/>
-            <div class="intro">
-              <h4>{{news.title}}</h4>
-              <p><span>{{news.source}}</span> | <span>{{news.pubDate}}</span></p>
-            </div>
-          </a>
-        </div>
-        <button class="loadMore" @click='loadMoreBtn' v-show='loadBtn'>点击加载更多</button>
-      </div>
-      <div class="fail" v-else>~~~~(>_<)~~~~， 请求到数据失败!</div>
-    </section>
+    </transition>-->
+    测试测试测试
+    <div class="news">
+      测试哦
+    </div>
   </div>
 </template>
 
@@ -143,6 +133,7 @@ export default {
   .news{
     min-height: 500px;
     padding: 0 10px;
+    border:solid coral;
     .new{
       height: 100px;
       color: #262627;
@@ -209,12 +200,12 @@ export default {
   height: 80px;
   margin: 50px auto;
   background-color: #69C61D
- 
-  border-radius: 100%; 
+  border:solid coral;
+  border-radius: 100%;
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
   animation: scaleout 1.0s infinite ease-in-out;
 }
- 
+
 @-webkit-keyframes scaleout {
   0% { -webkit-transform: scale(0.0) }
   100% {
@@ -222,7 +213,7 @@ export default {
     opacity: 0;
   }
 }
- 
+
 @keyframes scaleout {
   0% {
     transform: scale(0.0);

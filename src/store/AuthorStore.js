@@ -36,6 +36,16 @@ export default {
       status: true
     }, {
       src: require('../assets/author/author.jpg'),
+      name: '40秒',
+      slogan: '认识最疯狂的天才',
+      status: true
+    }, {
+      src: require('../assets/author/author.jpg'),
+      name: '40秒',
+      slogan: '认识最疯狂的天才',
+      status: true
+    }, {
+      src: require('../assets/author/author.jpg'),
       name: '艾问iAsk',
       slogan: '科技商业价值发现者',
       status: true

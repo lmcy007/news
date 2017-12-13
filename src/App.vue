@@ -3,13 +3,13 @@
     <div class="page">
       <app-head></app-head>
       <app-nav></app-nav>
-      <keep-alive>
+      <!--<keep-alive>
         <router-view class="fadeView"></router-view>
         <!--<router-view></router-view>-->
-      </keep-alive>
-      <app-foot></app-foot>
+      <!--</keep-alive>
+      <app-foot></app-foot>-->
     </div>
-    <app-menu></app-menu>
+    <!--<app-menu></app-menu>-->
   </div>
 </template>
 
@@ -32,13 +32,16 @@ export default {
 <style>
 #app{
   overflow: hidden;
+
 }
 .page{
   position: relative;
   z-index: 99;
-  transition: all 0.5s;
+  transition: width 0.05s ease-in 0s;
 }
 .toggle{
-  transform: translateX(-120px);
+  transform: translateX(-230px);
+  position: relative;
+  z-index: 100;
 }
 </style>

@@ -23,10 +23,10 @@ export default {
 <style lang="stylus">
 .menu{
   position: fixed;
-  top: 0;
+  top: 0em;
   right: 0;
   color: #fff;
-  width: 120px;
+  width: 40%;
   height: 100%;
   background: #3C3C3D;
   z-index: 9;
@@ -43,7 +43,7 @@ export default {
   }
   .aside li{
     height: 50px;
-    width: 60%;
+    width: 100%;
     padding: 0 20%;
     cursor: pointer;
     overflow: hidden;
@@ -59,6 +59,6 @@ export default {
   .aside li:hover{
     background-color: #3E90E3;
   }
-  
+
 }
 </style>
