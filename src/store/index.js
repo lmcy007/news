@@ -9,6 +9,7 @@ import PointStore from './PointStore'
 import AuthorStore from './AuthorStore'
 import MenuStore from './MenuStore'
 import HeadStore from './HeadStore'
+import getProdListData from './modules/getProdListData'
 
 Vue.use(Vuex)
 
@@ -32,6 +33,7 @@ export default new Vuex.Store({
     }
   },
   modules: {
+    getProdListData,
     SelectStore,
     PointStore,
     AuthorStore,

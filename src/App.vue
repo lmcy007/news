@@ -4,8 +4,8 @@
       <app-head></app-head>
       <app-nav></app-nav>
       <!--<keep-alive>
-        <router-view class="fadeView"></router-view>
-        <!--<router-view></router-view>-->
+        <router-view class="fadeView"></router-view>-->
+        <router-view></router-view>
       <!--</keep-alive>
       <app-foot></app-foot>-->
     </div>
@@ -18,6 +18,7 @@ import AppHead from '@/components/public/Head'
 import AppMenu from '@/components/public/Menu'
 import AppNav from '@/components/public/Nav'
 import AppFoot from '@/components/public/Foot'
+
 export default {
   name: 'app',
   components: {

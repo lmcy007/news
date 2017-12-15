@@ -23,6 +23,9 @@ export default {
         text: '精选',
         path: '/select'
       }, {
+        text: '热点',
+        path: '/HotTopic'
+      }, {
         text: '话题',
         path: '/point'
       }, {
