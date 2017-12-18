@@ -13,7 +13,6 @@ export default {
     mutations: {
         [getProdListData.ADD_PRODLISTDATA]: function (state, data) {
             state.prodListData = state.prodListData.concat(data);
-          alert("ab0");
         },
         [getProdListData.ADD_AUTHORLISTDATA]: function (state, data) {
             state.authorListData = state.authorListData.concat(data);
@@ -22,7 +21,6 @@ export default {
     },
     actions: {
         [getProdListData.ADD_PRODLISTDATA_ACTION_RESET]: function (context) {
-          alert("cd");
             requestID = requestID + 1;
             if (requestID === 1) {
             return new Promise((resolveA, reject) => {

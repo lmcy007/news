@@ -1,9 +1,6 @@
 <template>
-  <div>
-  <div class="head">
+    <div class="head">
       新闻网
-  </div>
-    <div></div>
   </div>
 </template>
 
@@ -66,9 +63,9 @@ export default {
 </script>
 
 <style lang="stylus">
-.head{
+  .head{
   text-align:center;
-  width:33rem;
+  width:30rem;
   height: 2.5rem;
   line-height:2.5rem;
   background #2894FF;
@@ -76,7 +73,7 @@ export default {
   color white;
   font-family: "宋体";
   font-style: italic;
-  font-size:20px;
+  font-size:25px;
   margin:0 auto;
 
 

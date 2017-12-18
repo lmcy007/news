@@ -36,7 +36,7 @@ export default {
         path: '/shipin'
       }, {
         text: '军事',
-        path: '/junshi'
+        path: '/HotTopic'
       }, {
         text: '科技',
         path: '/keji'
@@ -53,15 +53,16 @@ export default {
 
 <style lang="stylus">
 .nav{
-  width:33rem;
+  width:30rem;
   height: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: #fff;
   margin:0 auto;
+  border-bottom: 1px solid #dddddd;
   .nav{
-    width: 33%;
+    width: 34%;
     height: 100%;
     a{
       height: 100%;
@@ -71,7 +72,7 @@ export default {
       align-items: center;
       text-decoration: none;
       color: #666;
-      font-size: 15px;
+      font-size: 18px;
       text-align: center;
       span:first-child{
         height: 30px;

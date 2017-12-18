@@ -33,7 +33,7 @@ export default {
 <style>
 #app{
   overflow: hidden;
-
+  background:#eeeeee;
 }
 .page{
   position: relative;

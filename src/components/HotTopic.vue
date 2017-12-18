@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-  <div class="article"  v-for="(item,i) in previewList" v-on:click="toggle(item)">
-    测试测试
+    <div>测试</div>
+    <carousel></carousel>
+    <div class="article"  v-for="(item,i) in previewList" v-on:click="toggle(item)">
     <div class="title">
       {{i}}{{item.title}}
       <span class="time">{{item.time}}</span>
@@ -12,7 +13,6 @@
       </div>
     </div>
   </div>
-    <div>测试</div>
   </div>
 </template>
 
@@ -25,6 +25,7 @@
   import { mapState } from 'vuex'
   // vuex常量
   import * as getProdListData from '../store/types/getProdListData-types'
+  import carousel from '@/components/carousel'
   export default {
     name: 'HotTopic',
     data: function () {
@@ -34,9 +35,10 @@
         previewList: []
       }
     },
-    components: {},
+    components: {
+      carousel
+    },
     mounted: function () {
-      alert("ab");
       this.getHottopicsReset();
     },
     methods: {
@@ -62,9 +64,10 @@
   .container{
     font-size:1em;
     margin-top:1em;
-    width:33rem;
+    width:30rem;
     align-items: center;
     margin:0 auto;
+    background:#ffffff;
   }
   .article{
     border-bottom: 1px solid #dddddd;
@@ -73,6 +76,7 @@
   }
   .title{
     position: relative;
+    padding-left: 1em;
     line-height: 3em;
     color: #545454;
     font-weight: 500;
@@ -80,11 +84,9 @@
     font-size:11em;
     clear: both;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
   }
   .title a{
     text-decoration:none;
-
   }
   .time{
     margin-left: 10px;
