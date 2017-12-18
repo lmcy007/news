@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <div>测试</div>
+  <div class="container">    
     <carousel></carousel>
     <div class="article"  v-for="(item,i) in previewList" v-on:click="toggle(item)">
     <div class="title">

@@ -49,7 +49,7 @@ export default {
   width:30rem;
   height: 10rem;
   line-height:2.5rem;
-  background: #2894FF;
+
   text-align:center;
   color: white;
   font-family: "宋体";
@@ -58,15 +58,13 @@ export default {
   margin:0 auto;
   border: dotted;
 }
-carousel, ul, li {
-  width: 100%;
-}
 li {
   position: absolute;
 }
 li img {
   width: 100%;
-  height: 5.33rem;
+  width:30rem;
+  height: 10rem;
 }
 .image-enter-active {
   transform: translateX(10);
