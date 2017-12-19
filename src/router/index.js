@@ -5,6 +5,9 @@ import Select from '@/components/Select'
 import Point from '@/components/Point'
 import Author from '@/components/Author'
 import HotTopic from '@/components/HotTopic'
+import TmtNews from '@/components/TmtNews'
+import Recommend from '@/components/Recommend'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -16,11 +19,14 @@ const router = new Router({
    */
   routes: [
     {
-      path: '/select',
-      component: Select
+      path: '/TmtNews',
+      component: TmtNews
     }, {
       path: '/HotTopic',
       component: HotTopic
+    }, {
+      path: `/Recommend`,
+      component: Recommend
     }, {
       path: '/point',
       component: Point

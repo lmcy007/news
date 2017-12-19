@@ -13,7 +13,6 @@
 <script>
 export default {
   created() {
-    alert("abcdef");
     this.play()
   },
   data() {
@@ -56,13 +55,12 @@ export default {
   font-style: italic;
   font-size:25px;
   margin:0 auto;
-  border: dotted;
+
 }
 li {
   position: absolute;
 }
 li img {
-  width: 100%;
   width:30rem;
   height: 10rem;
 }
@@ -82,12 +80,11 @@ li img {
 }
 .bullet {
   position: absolute;
-  top: 7rem;
-  right:2rem;
+  top: 12rem;
+  right:21rem;
   margin: 0 auto;
   text-align: right;
   z-index: 10;
-  border: dotted;
 }
 .bullet span {
   width: 10px;

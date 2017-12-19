@@ -21,7 +21,7 @@ export default {
       // 路由参数
       menus: [{
         text: '精选',
-        path: '/select'
+        path: '/TmtNews'
       }, {
         text: '热点',
         path: '/HotTopic'
@@ -35,8 +35,8 @@ export default {
         text: '视频',
         path: '/shipin'
       }, {
-        text: '军事',
-        path: '/HotTopic'
+        text: '推荐',
+        path: '/Recommend'
       }, {
         text: '科技',
         path: '/keji'

@@ -1,16 +1,17 @@
 <template>
   <div class="container">
     <carousel></carousel>
-    <div class="article"  v-for="(item,i) in previewList" v-on:click="toggle(item)">
+    <div class="article"  v-for="(item,i) in previewList">
+      <div class="piece">
     <div class="title">
       {{i}}{{item.title}}
-      <span class="time">{{item.time}}</span>
     </div>
-    <div class="info"  v-show="!item.show">
+        <div><span class="time">{{item.time}}</span></div>
+    <div class="info">
       {{item.info}}
-      <div class="detail"><a href="http://mp.weixin.qq.com/s/ZdRnAIqx7r19Knbjc6Cirw">查看新闻</a>
-      </div>
     </div>
+    </div>
+      <!--<div class="righttupian"><img src="../assets/tuijian/tupian0.jpg" alt="Readhub" ></div>-->
   </div>
     <div align="center" class="ceshi"><button class="button0"  @click.asyc="monclickbutton"> 加载更多 </button></div>
   </div>
@@ -27,7 +28,7 @@
   import * as getProdListData from '../store/types/getProdListData-types'
   import carousel from '@/components/carousel'
   export default {
-    name: 'HotTopic',
+    name: 'Recommend',
     data: function () {
       return {
         item: '',
@@ -83,11 +84,16 @@
     border-bottom: 1px solid #dddddd;
     font-size:0.1em;
     text-align: left;
+    padding-top:5em;
+    padding-bottom:1em;
+  }
+  .piece{
+    width:20rem;
   }
   .title{
     position: relative;
     padding-left: 1em;
-    line-height: 3em;
+    line-height: 1.5em;
     color: #545454;
     font-weight: 500;
     cursor: pointer;
@@ -99,9 +105,10 @@
     text-decoration:none;
   }
   .time{
-    margin-left: 10px;
     font-size: 10px;
     color: #aaacb4;
+    line-height: 3em;
+    padding-left: 2em;
   }
   .button0 {
     background-color: white;
@@ -116,13 +123,16 @@
     outline:none ;
   }
    .info{
-    margin-top: 5px;
     font-size: 8em;
     line-height: 1.8em;
     color: #aaacb4;
+     padding-left: 1.3em;
   }
   .detail{
-    text-align:right;
     font-size:1em;
+  }
+  .righttupian{
+    width:2rem;
+    float:right;
   }
 </style>
